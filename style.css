@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a2f4b;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+.aquarium-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #4fc3f7;
+}
+
+#aquarium {
+    width: 100%;
+    height: 400px;
+    background-color: #006994;
+    border: 10px solid #3a2c1a;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4fc3f7;
+    border: none;
+    border-radius: 5px;
+    color: #1a2f4b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #81d4fa;
+    transform: scale(1.05);
+}
+
+.fish-count {
+    padding: 10px 20px;
+    background-color: #3a2c1a;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.fish {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    transition: transform 0.5s linear;
+}
+
+.food {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffeb3b;
+    border-radius: 50%;
+}
